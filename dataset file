@@ -1,1 +1,13 @@
- grocery_df = pd.read_csv(r"C:\Users\DELL\OneDrive\Desktop\ML\Apriori\Groceries_dataset.csv")
+import streamlit as st
+import pandas as pd
+try:
+    grocery_df = pd.read_csv(r"C:\Users\DELL\OneDrive\Desktop\ML\Apriori\Groceries_dataset.csv")
+    st.write("Dataset load Successfully")
+except:
+    st.write("Dataset not found")
+
+try:
+    grocery_df = pd.read_csv(r"C:\Users\DELL\OneDrive\Desktop\ML\Apriori\Groceries_dataset.csv")
+    st.write("Dataset load Successfully")
+except:
+    st.write("Dataset not found")
