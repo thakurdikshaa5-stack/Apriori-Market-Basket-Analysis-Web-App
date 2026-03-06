@@ -66,6 +66,7 @@ with tab1:
     st.success("Use the navigation tabs above to dive into the data and analysis!")
 
 with tab2:
+    if grocery_df is not None:
     st.subheader("Basic Information")
     st.write(f"**Total Rows:** {grocery_df.shape[0]}")
     st.write(f"**Total Columns:** {grocery_df.shape[1]}")
@@ -79,6 +80,7 @@ with tab2:
     st.info("This dataset contains grocery sales data. Use other tabs for detailed analysis and visualizations.")
 
 with tab3:
+    if grocery_df is not None:
     st.header("📈 Grocery Data Analysis")
 
     st.subheader("Q1: Top 10 Items Sold")
