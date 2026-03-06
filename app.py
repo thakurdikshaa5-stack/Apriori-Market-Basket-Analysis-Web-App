@@ -66,7 +66,8 @@ with tab1:
     st.success("Use the navigation tabs above to dive into the data and analysis!")
 
 with tab2:
-    if grocery_df is not None:
+    
+if grocery_df is not None:
     st.subheader("Basic Information")
     st.write(f"**Total Rows:** {grocery_df.shape[0]}")
     st.write(f"**Total Columns:** {grocery_df.shape[1]}")
