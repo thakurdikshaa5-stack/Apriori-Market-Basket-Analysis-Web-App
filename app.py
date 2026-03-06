@@ -80,7 +80,8 @@ with tab2:
     st.info("This dataset contains grocery sales data. Use other tabs for detailed analysis and visualizations.")
 
 with tab3:
-    if grocery_df is not None:
+    
+  if grocery_df is not None:
     st.header("📈 Grocery Data Analysis")
 
     st.subheader("Q1: Top 10 Items Sold")
