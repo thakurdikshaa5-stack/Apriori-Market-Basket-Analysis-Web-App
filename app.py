@@ -24,7 +24,7 @@ st.title(" Streamlit App🌟")
 grocery_df = None
 
 try:
-    grocery_df = pd.read_csv(r"C:\Users\DELL\OneDrive\Desktop\ML\Apriori\Groceries_dataset.csv")
+    grocery_df = pd.read_csv("Groceries_dataset.csv")
     st.write("Dataset load Successfully")
 except:
     st.write("Dataset not found")
@@ -66,7 +66,6 @@ with tab1:
     st.success("Use the navigation tabs above to dive into the data and analysis!")
 
 with tab2:
- if grocery_df is not None:
     st.subheader("Basic Information")
     st.write(f"**Total Rows:** {grocery_df.shape[0]}")
     st.write(f"**Total Columns:** {grocery_df.shape[1]}")
@@ -80,8 +79,6 @@ with tab2:
     st.info("This dataset contains grocery sales data. Use other tabs for detailed analysis and visualizations.")
 
 with tab3:
-    
-  if grocery_df is not None:
     st.header("📈 Grocery Data Analysis")
 
     st.subheader("Q1: Top 10 Items Sold")
