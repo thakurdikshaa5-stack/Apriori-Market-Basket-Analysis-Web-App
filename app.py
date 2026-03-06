@@ -20,6 +20,8 @@ st.markdown(
 )
 
 st.title(" Streamlit App🌟")
+# load dataset
+grocery_df = None
 
 try:
     grocery_df = pd.read_csv(r"C:\Users\DELL\OneDrive\Desktop\ML\Apriori\Groceries_dataset.csv")
